@@ -1,0 +1,267 @@
+/* src/styles.css */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f8;
+    color: #fcd53f;
+  }
+  
+  .app-container {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    flex-direction: column;
+  }
+
+  .logo-title {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    gap: 10px;
+  }
+  
+  .logo-img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+  }
+  
+
+  .header {
+    background: #007acc;
+    color: white;
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .selected-folder-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+
+  }
+  
+  .folder-button {
+    padding: 10px 20px;
+    background: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #007acc;
+    font-size: 16px;
+ 
+  }
+  .folder-button:hover {
+    background: #e6f0fa;
+  }
+  
+  .main-layout {
+    flex: 1;
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .left-section {
+    flex: 7;
+    background-color: #1f1f1f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+  
+  .right-section {
+    flex: 3;
+    text-align: left;
+    background-color: #111;
+    padding: 10px;
+    overflow-y: auto;
+    box-shadow: inset 1px 0 5px rgba(0, 0, 0, 0.05);
+  }
+  
+  .placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: #fef5ed; 
+  }
+  
+  .placeholder-img {
+    width: 600px;
+    height: 550px;
+    /* object-fit: cover; */
+    /* opacity: 0.6; optional faded look */
+  }
+  
+
+  .content-box {
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 20px;
+    padding:10px;
+
+  }
+  
+
+  .folder-section {
+    margin-bottom: 15px;
+    
+  }
+  
+  .folder-toggle {
+    background: none;
+    border: none;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #fff;
+
+    text-align: left;
+    display: flex;
+    align-items: flex-start;
+    padding-left: 0;
+  }
+  
+  .folder-toggle:hover {
+    color: #007acc;
+  }
+  
+  .arrow {
+    margin-right: 8px;
+  }
+  
+  .file-list {
+    list-style: none;
+    padding-left:20px;
+    margin-top: 10px;
+    text-align: left;
+    
+  }
+
+  .file-item {
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    
+  }
+  
+  .file-link {
+    background: none;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 0.95rem;
+    padding: 4px 0;
+    text-align: left;
+    display: flex;
+    align-items: flex-start;
+    padding-left: 0;
+  }
+  
+  .file-link:hover {
+    color: #fcd53f;
+    text-decoration: underline;
+  }
+
+  .active-folder .folder-toggle {
+    color: #007acc;
+    font-size: 1.1rem;
+  }
+  
+  .active-file .file-link {
+    color: #fcd53f;
+    font-weight: bold;
+    /* text-decoration: underline; */
+  }
+  video::cue {
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size: 0.8em;
+    /* text-align: center; */
+
+  }
+  .overall-progress-container {
+    margin-bottom: 16px;
+  }
+
+  .progress-bar-container {
+    background: #eee;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 10px;
+    position: relative;
+    /* margin-bottom: -10px; */
+  }
+  
+  .progress-bar {
+    height: 100%;
+    background-color: #2196f3;
+    transition: width 0.3s;
+  }
+  
+  .progress-label {
+    font-size: 13px;
+    color: greenyellow;
+    margin-top: 3px;
+    text-align: left;
+  }
+
+  .progress-label-folder {
+    color: greenyellow;
+    margin-top: -8px;
+
+  }
+  .header-content{
+    margin-top: -10px;
+  }
+  .content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0px;
+  }
+  .resume-button {
+    background-color: #2196f3;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-bottom: 25px;
+
+  }  
+  .resume-button:hover {
+    background-color: #1976d2;
+  }
+
+
+
+/*   
+  .content-box h2 {
+    margin-top: 0;
+    font-size: 1.4rem;
+    color: #007acc;
+    margin-bottom: 10px;
+  }
+  
+  .content-box ul {
+    list-style-type: none;
+    padding-left: 0;
+    color: #fff;
+    font-size: 1.1rem;
+  }
+  
+  .content-box li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .content-box li:last-child {
+    border-bottom: none;
+  } */
+  
