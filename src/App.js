@@ -158,7 +158,7 @@ function App() {
             <VideoPlayer file={selectedVideo} subtitle={selectedSubtitle} />
           ) : (
             <div className="placeholder">
-            <img src={`${process.env.PUBLIC_URL}/main-image.png`} alt="Placeholder" className="placeholder-img" />
+            <img src={`${process.env.PUBLIC_URL}/main-img.png`} alt="Placeholder" className="placeholder-img" />
           </div>
           
           )}
